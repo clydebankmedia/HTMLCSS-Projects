@@ -1,0 +1,61 @@
+body {
+    max-width: 800px;
+    margin: auto; /* center the content */
+    
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #00008b;
+}
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 40px;
+    line-height: 30px;
+}
+
+footer {
+    height: 30px;
+    line-height: 20px;
+}
+
+footer *, header * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* doesn't actually matter for my code, but might be useful. */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+nav ul li a.active {
+    background-color: #007BFF;
+    color: white;
+}

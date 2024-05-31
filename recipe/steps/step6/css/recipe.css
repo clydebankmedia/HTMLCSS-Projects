@@ -1,0 +1,87 @@
+/* Article styles */
+article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+figure {
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+#ingredients {
+    clear: both;
+}
+
+#description {
+    text-align: justify;
+}
+
+article > section {
+    border: thick solid black;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 0 20px;
+    background-color: cornsilk;
+}
+
+
+article details summary {
+    cursor: pointer;
+}
+
+article details summary > * {
+    display: inline;
+}
+
+/* Aside styles */
+article > aside {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+article > footer {
+    font-size: 0.8em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+article > footer dl {
+    text-align: left;
+    display: inline-block;
+}
+
+dt {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    min-width: 100px;
+    text-align: right;
+}
+dt::after {
+    content: ": ";
+}
+dd {
+    display: inline;
+}
+dd::after {
+    content: "";
+    display: block;
+}

@@ -1,0 +1,46 @@
+main {
+    display: flex;
+    justify-content: space-around;
+
+    /* Overrides style.css rule! This isn't necessarily the best approach,
+    but it is an example of overriding. Could use a `<div>` container
+    or a `blog-post` class instead. */
+    width: 100%; 
+}
+
+article {
+    flex: 3;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.left-sidebar, .right-sidebar {
+    padding: 20px;
+    background-color: #f0f0f0;
+    flex: 1;
+}
+/* Use this to style the first line instead of first letter. */
+/* article > section:first-of-type > p:first-of-type::first-line {
+    font-size: 1.5em;
+    font-weight: bold;
+} */
+
+article > section:first-of-type > p:first-of-type::first-letter {
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+    box-shadow: 3px 3px 0 red;
+    font-size: 350%;
+    padding: 6px 3px;
+    margin-right: 6px;
+    float: left;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    line-height: 1; /* helps in Chrome/Edge (WebKit) */
+}
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,83 @@
+:root {
+    --footer-height: 30px;
+    --header-height: 40px;
+    --bookend-padding: 5px; /* header/footer padding, top AND bottom */
+}
+
+body {
+    max-width: 800px;
+    margin: auto; /* center the content */
+    
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #00008b;
+    
+    line-height: 1.6;
+    padding: 0;
+    
+}
+
+body > header, body > footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: var(--bookend-padding) 0;
+    box-sizing: border-box;
+}
+
+body > header {
+    height: var(--header-height);
+    line-height: calc(var(--header-height) - (2 * var(--bookend-padding)));
+}
+
+body > footer {
+    height: var(--footer-height);
+    line-height: calc(var(--footer-height) - (2 * var(--bookend-padding)));
+}
+
+body > footer *, body > header * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    color: #007BFF;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+nav ul li a.active {
+    background-color: #007BFF;
+    color: white;
+}
+main {
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    margin: 0 10px;
+    padding: 0;
+    overflow: auto; /* establish a new block formatting context */
+}

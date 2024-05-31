@@ -1,0 +1,67 @@
+/* Base styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto; /* horizontally center inside parent box */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header styling */
+header h1 {
+    color: navy;
+}
+
+header h2 {
+    color: darkslategray;
+}
+
+#profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* corners have circles with radii of 50% of width/height */
+    box-shadow: 0 0 10px gray; /* no offset, blur radius 10px */
+}
+
+/* Main doc text styling */
+p, ul {
+    font-size: 18px;
+}
+
+/* List styling */
+li {
+    display: inline;
+    margin: 10px;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+#contact-info li:hover {
+    background-color: gray;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    main {
+        width: 95%;
+        padding: 10px;
+    }
+
+    li {
+        display: block;
+    }
+}
